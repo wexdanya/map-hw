@@ -6,8 +6,8 @@
 const isSame = (str1, str2) => {
   const arr1 = new Map();
   arr1.set(
-    [...str1.toLocaleString().toLowerCase()].sort(),
-    [...str2.toLocaleString().toLowerCase()].sort()
+    [...str1.toLowerCase()].sort(),
+    [...str2.toLowerCase()].sort()
   );
   arr1.forEach((key, val) => {
     for (let i = 0; i < key.length; i++) {
